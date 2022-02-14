@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end-2</title>
+    <link rel="stylesheet" href="box-shadows.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        .wrapper {
+            background: url('./images/pattern-background-mobile.svg') no-repeat center;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 350px;
+            margin: 0px auto;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: space-between; */
+            align-items: center;
+            text-align: center;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        .img-wrap>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .text{
+            padding: 10px 20px;
+        }
+        .plan{
+            display: flex;
+            align-items: center;
+            background-color: hsl(225, 100%, 98%);
+            padding: 10px;
+            font-size: 0.9rem;
+            margin-top: 0.8rem;
+        }
+        .plan > img{
+            width: 40px;
+            height: 40px;
+        }
+        .term{
+            margin-left: 0.8rem;
+        }
+        .term span{
+            opacity: 0.6;
+        }
+        .change-btn{
+            margin-left: auto;
+            text-decoration: none;
+        }
+        .button{
+            width: 100%;
+            display: inline-block;
+            margin-top: 0.8rem;
+            text-decoration: none;
+            background-color: hsl(245, 75%, 52%);
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+        }
+        .cancel-btn{
+            margin-top: 0.8rem;
+            display: block;
+            text-decoration: none;
+        }
+        .detail{
+            margin-top: 0.4rem;
+            opacity: 0.6;
+        }
+        @media screen and (min-width: 768px) {
+            .wrapper{
+                background: url('./images/pattern-background-desktop.svg') no-repeat center;
+            background-size: cover;
+
+            }
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container bShadow bShadow-62">
+            <div class="img-wrap">
+                <img src="./images/illustration-hero.svg" alt="">
+            </div>
+            <div class="text">
+                <h2>Order Summary</h2>
+                <p class="detail">You can now listen to millions of songs, audio books, and podcasts on any device anywhere you like!
+                </p>
+                <div class="plan">
+                    <img src="./images/icon-music.svg" alt="">
+                    <div class="term">
+                        <p>Annual Plan</p>
+                        <span>$59.99/year</span>
+                    </div>
+                    <a href="#" class="change-btn">Change</a>
+                </div>
+                <a href="#" class="button bShadow-7h">Proceed to Payment</a>
+                <a href="#" class="cancel-btn">Cancel Order</a>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
